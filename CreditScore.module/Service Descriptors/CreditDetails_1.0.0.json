@@ -1,0 +1,137 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "CreditDetails",
+    "x-lastModified": "Sep 01, 2018 12:22PM PST"
+  },
+  "paths": {
+    "/creditdetails/v1": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/CreditScoreDetails"
+            },
+            "examples": {
+              "application/json": {
+                "EquifaxResponse": {
+                  "FICOScore": "700",
+                  "NoOfInquiries": "123",
+                  "Rating": "Good"
+                },
+                "ExperianResponse": {
+                  "FICOScore": "700",
+                  "NoOfInquiries": "123",
+                  "Rating": "Good"
+                },
+                "TransUnionResponse": {
+                  "FICOScore": "700",
+                  "NoOfInquiries": "123",
+                  "Rating": "Good"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Customer Details",
+            "schema": {
+              "$ref": "#/definitions/CustomerDetails"
+            }
+          }
+        ],
+        "operationId": "postCreditdetails",
+        "consumes": [
+          "application/json"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "CustomerDetails": {
+      "type": "object",
+      "properties": {
+        "DOB": {
+          "type": "string",
+          "default": "01/01/1980"
+        },
+        "FirstName": {
+          "type": "string",
+          "default": "Foo"
+        },
+        "LastName": {
+          "type": "string",
+          "default": "Bar"
+        },
+        "SSN": {
+          "type": "string",
+          "default": "000-00-0000"
+        }
+      }
+    },
+    "CreditScoreDetails": {
+      "type": "object",
+      "properties": {
+        "EquifaxResponse": {
+          "type": "object",
+          "properties": {
+            "FICOScore": {
+              "type": "string",
+              "default": "700"
+            },
+            "NoOfInquiries": {
+              "type": "string",
+              "default": "123"
+            },
+            "Rating": {
+              "type": "string",
+              "default": "Good"
+            }
+          }
+        },
+        "ExperianResponse": {
+          "type": "object",
+          "properties": {
+            "FICOScore": {
+              "type": "string",
+              "default": "700"
+            },
+            "NoOfInquiries": {
+              "type": "string",
+              "default": "123"
+            },
+            "Rating": {
+              "type": "string",
+              "default": "Good"
+            }
+          }
+        },
+        "TransUnionResponse": {
+          "type": "object",
+          "properties": {
+            "FICOScore": {
+              "type": "string",
+              "default": "700"
+            },
+            "NoOfInquiries": {
+              "type": "string",
+              "default": "123"
+            },
+            "Rating": {
+              "type": "string",
+              "default": "Good"
+            }
+          }
+        }
+      }
+    }
+  }
+}
