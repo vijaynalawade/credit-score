@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_HZ6ogK65EeiTkKQTqTnMlw" targetNamespace="http://tns.tibco.com/bw/composite/CreditScore.module" name="CreditScore.module" compositeext:version="2.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_Vh_9gK65EeiTkKQTqTnMlw" name="creditdetails-v2" promote="ComponentProcess/creditdetails-v2">
+    <sca:interface.wsdl xmi:id="_ViNY4K65EeiTkKQTqTnMlw" interface="http://xmlns.example.com/20180902070434PLT#wsdl.interface(creditdetails-v2)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_VicCYK65EeiTkKQTqTnMlw" name="RestService" path="/creditdetails/v2" docBasePath="http://localhost:7777/CreditScore.module" docResourcePath="Creditdetails" basePath="/" connector="creditscore.module.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/CreditDetails_2.0.0.json">
+      <operation xmi:id="_ViiwEK65EeiTkKQTqTnMlw" operationName="post" nickname="postCreditdetails" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_Vj7QIK65EeiTkKQTqTnMlw"/>
+      <advancedConfig xmi:id="_VifFsK65EeiTkKQTqTnMlw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_ViiwEa65EeiTkKQTqTnMlw" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_JdiGEK65EeiTkKQTqTnMlw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Jd1BAK65EeiTkKQTqTnMlw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Jd9j4K65EeiTkKQTqTnMlw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_JeE4oK65EeiTkKQTqTnMlw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_JeK_QK65EeiTkKQTqTnMlw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_JeRs8K65EeiTkKQTqTnMlw" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_JeXzkK65EeiTkKQTqTnMlw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_H7TeUK65EeiTkKQTqTnMlw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_H7VTgK65EeiTkKQTqTnMlw" processName="creditscore.module.GetCreditDetails"/>
+    <sca:service xmi:id="_Vh4BsK65EeiTkKQTqTnMlw" name="creditdetails-v2">
+      <sca:interface.wsdl xmi:id="_Vh6d8K65EeiTkKQTqTnMlw" interface="http://xmlns.example.com/20180902070434PLT#wsdl.interface(creditdetails-v2)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
