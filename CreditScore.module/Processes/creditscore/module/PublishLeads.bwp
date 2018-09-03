@@ -474,7 +474,7 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.1"/>
-                                    <layoutConstraint x="355"
+                                    <layoutConstraint x="398"
                                     xsi:type="notation:Bounds" y="97"/>
                                     </children>
                                     <children type="4002 bw.restjson.JsonRender">
@@ -547,8 +547,8 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.3"/>
                                     <layoutConstraint
-                                    height="40" width="40"
-                                    x="244"
+                                    height="40" width="176"
+                                    x="233"
                                     xsi:type="notation:Bounds" y="97"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
@@ -564,7 +564,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
                                     <layoutConstraint height="384"
-                                    width="515" xsi:type="notation:Bounds"/>
+                                    width="531" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -573,8 +573,7 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="365" width="444"
-                                x="30" xsi:type="notation:Bounds" y="20"/>
+                            <layoutConstraint height="384" width="534" xsi:type="notation:Bounds"/>
                         </children>
                         <styles xsi:type="notation:SortingStyle"/>
                         <styles xsi:type="notation:FilteringStyle"/>
@@ -584,7 +583,8 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="409" width="519" xsi:type="notation:Bounds"/>
+                    <layoutConstraint height="408" width="534" x="1"
+                        xsi:type="notation:Bounds" y="1"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
                 <styles xsi:type="notation:FilteringStyle"/>
@@ -592,7 +592,7 @@
             </children>
             <styles fontName="Segoe UI" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="460" width="860" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="460" width="876" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -657,11 +657,11 @@
             </bpws:from>
         </bpws:variable>
         <bpws:variable element="ns3:KafkaSendMessageInput"
-            name="KafkaSendMessage-input" sca-bpel:internal="true"/>
+            name="PublishLeadsonKafka-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns4:KafkaSendMessageOutput"
-            name="KafkaSendMessage" sca-bpel:internal="true"/>
+            name="PublishLeadsonKafka" sca-bpel:internal="true"/>
         <bpws:variable element="ns5:ActivityErrorData"
-            name="_error_KafkaSendMessage" sca-bpel:internal="true"/>
+            name="_error_PublishLeadsonKafka" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -749,9 +749,9 @@
             </bpws:extensionActivity>
             <bpws:extensionActivity>
                 <tibex:activityExtension
-                    inputVariable="KafkaSendMessage-input"
-                    name="KafkaSendMessage"
-                    outputVariable="KafkaSendMessage"
+                    inputVariable="PublishLeadsonKafka-input"
+                    name="PublishLeadsonKafka"
+                    outputVariable="PublishLeadsonKafka"
                     tibex:xpdlId="524bd5a2-379b-4170-95fb-f59451fb2f0c" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="RenderJSONToEnd"/>

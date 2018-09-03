@@ -539,7 +539,7 @@
 
                                     <layoutConstraint
                                     height="40"
-                                    width="40"
+                                    width="142"
                                     x="192"
                                     xsi:type="notation:Bounds" y="38"/>
                                     </children>
