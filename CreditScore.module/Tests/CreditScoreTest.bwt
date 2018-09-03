@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emulation:EmulationData xmlns:emulation="http:///emulation.ecore" isBW="true" location="/CreditScore.module/Tests/CreditScoreTest.bwt">
+  <ProcessNode Id="creditscore.module.GetCreditScore" Name="creditscore.module.GetCreditScore" ModelType="BW" moduleName="CreditScore.module">
+    <Assertion Id="9caba957-11d9-4122-8c6f-68e10340870a" Name="get" hasDecoration="true">
+      <Lang>urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0</Lang>
+      <Expression>
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://tns.tibco.com/bw/json/1535811725848&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;get.item&quot;/>&lt;xsl:template match=&quot;/&quot;>&lt;xsl:choose>&lt;xsl:when test=&quot;$get.item/tns:rating='Excellent'&quot;>&lt;result status=&quot;passed&quot; message=&quot;Assertion passed.&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;result status=&quot;failed&quot; message=&quot;Assertion failed.&quot;/>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/xsl:template>&lt;/xsl:stylesheet></Expression>
+      <OriginalExpression>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://tns.tibco.com/bw/json/1535811725848&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;get&quot;/>&lt;xsl:template name=&quot;&quot; match=&quot;/&quot;>&lt;Primitive-Assertion>&lt;AssertType>&lt;string>&lt;testInput>&lt;xsl:value-of select=&quot;$get/item/tns:ExperianResponseElement/tns:rating&quot;/>&lt;/testInput>&lt;xsl:choose>&lt;xsl:when test=&quot;$get/item/tns:ExperianResponseElement/tns:fiCOScore >= 900&quot;>&lt;goldInput>&lt;xsl:value-of select=&quot;&amp;quot;Excellent&amp;quot;&quot;/>&lt;/goldInput>&lt;/xsl:when>&lt;xsl:when test=&quot;$get/item/tns:ExperianResponseElement/tns:fiCOScore >= 700&quot;>&lt;goldInput>&lt;xsl:value-of select=&quot;&amp;quot;GOOD&amp;quot;&quot;/>&lt;/goldInput>&lt;/xsl:when>&lt;xsl:when test=&quot;$get/item/tns:ExperianResponseElement/tns:fiCOScore >= 400&quot;>&lt;goldInput>&lt;xsl:value-of select=&quot;&amp;quot;Average&amp;quot;&quot;/>&lt;/goldInput>&lt;/xsl:when>&lt;xsl:otherwise>&lt;goldInput>&lt;xsl:value-of select=&quot;&amp;quot;POOR&amp;quot;&quot;/>&lt;/goldInput>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/string>&lt;/AssertType>&lt;/Primitive-Assertion>&lt;/xsl:template>&lt;/xsl:stylesheet></OriginalExpression>
+    </Assertion>
+    <Operation Name="callProcess" serviceName="creditscore.module.GetCreditScore">
+      <Inputs Id="a3065f4a-3f95-4312-aa2c-5df09c7e89b8CreditScore.module_creditscore.module.GetCreditScore_callProcess_Start" Name="Start" isDefault="true" type="CALLPROCESS">
+        <informations Name="input" nameSpace="/T1535953916666Converted/JsonSchema">
+          <nameSpaces prefix="tns" nameSapce="/T1535953916666Converted/JsonSchema"/>
+          <Parameter Name="tns:CustomerDetails">
+            <parameters Name="tns:DOB" Value="&quot;01/01/1980&quot;" type="string" nameSpace="/T1535953916666Converted/JsonSchema" canDelete="true">
+              <parent Name="CustomerDetails" nameSpace="/T1535953916666Converted/JsonSchema"/>
+            </parameters>
+            <parameters Name="tns:FirstName" Value="&quot;Foo&quot;" type="string" nameSpace="/T1535953916666Converted/JsonSchema" canDelete="true">
+              <parent Name="CustomerDetails" nameSpace="/T1535953916666Converted/JsonSchema"/>
+            </parameters>
+            <parameters Name="tns:LastName" Value="&quot;Bar&quot;" type="string" nameSpace="/T1535953916666Converted/JsonSchema" canDelete="true">
+              <parent Name="CustomerDetails" nameSpace="/T1535953916666Converted/JsonSchema"/>
+            </parameters>
+            <parameters Name="tns:Email" Value="&quot;foobar@demo.com&quot;" type="string" nameSpace="/T1535953916666Converted/JsonSchema" canDelete="true">
+              <parent Name="CustomerDetails" nameSpace="/T1535953916666Converted/JsonSchema"/>
+            </parameters>
+            <parameters Name="tns:SSN" Value="&quot;000-00-0000&quot;" type="string" nameSpace="/T1535953916666Converted/JsonSchema" canDelete="true">
+              <parent Name="CustomerDetails" nameSpace="/T1535953916666Converted/JsonSchema"/>
+            </parameters>
+          </Parameter>
+        </informations>
+      </Inputs>
+      <resolvedInput inputValue="&lt;tns:CustomerDetails xmlns:tns='/T1535953916666Converted/JsonSchema' >&lt;tns:DOB>&quot;01/01/1980&quot;&lt;/tns:DOB>&lt;tns:FirstName>&quot;Foo&quot;&lt;/tns:FirstName>&lt;tns:LastName>&quot;Bar&quot;&lt;/tns:LastName>&lt;tns:Email>&quot;foobar@demo.com&quot;&lt;/tns:Email>&lt;tns:SSN>&quot;000-00-0000&quot;&lt;/tns:SSN>&lt;/tns:CustomerDetails>"/>
+    </Operation>
+  </ProcessNode>
+</emulation:EmulationData>

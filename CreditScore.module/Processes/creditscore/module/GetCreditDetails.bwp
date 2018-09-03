@@ -749,6 +749,8 @@
             name="CreateLeads-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns5:CusomerLeadsResponseElement"
             name="CreateLeads" sca-bpel:internal="true"/>
+        <bpws:variable element="ns3:CustomerDetails"
+            name="CheckCreditScore-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -804,6 +806,7 @@
                                 <tibex:extActivity
                                     expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;/T1535953916666Converted/JsonSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;post&quot;/>&lt;xsl:template name=&quot;CheckCreditScore-input&quot; match=&quot;/&quot;>&lt;tns:CustomerDetails>&lt;xsl:if test=&quot;$post/item/tns:CustomerDetails/tns:DOB&quot;>&lt;tns:DOB>&lt;xsl:value-of select=&quot;$post/item/tns:CustomerDetails/tns:DOB&quot;/>&lt;/tns:DOB>&lt;/xsl:if>&lt;xsl:if test=&quot;$post/item/tns:CustomerDetails/tns:FirstName&quot;>&lt;tns:FirstName>&lt;xsl:value-of select=&quot;$post/item/tns:CustomerDetails/tns:FirstName&quot;/>&lt;/tns:FirstName>&lt;/xsl:if>&lt;xsl:if test=&quot;$post/item/tns:CustomerDetails/tns:LastName&quot;>&lt;tns:LastName>&lt;xsl:value-of select=&quot;$post/item/tns:CustomerDetails/tns:LastName&quot;/>&lt;/tns:LastName>&lt;/xsl:if>&lt;xsl:if test=&quot;$post/item/tns:CustomerDetails/tns:Email&quot;>&lt;tns:Email>&lt;xsl:value-of select=&quot;$post/item/tns:CustomerDetails/tns:Email&quot;/>&lt;/tns:Email>&lt;/xsl:if>&lt;xsl:if test=&quot;$post/item/tns:CustomerDetails/tns:SSN&quot;>&lt;tns:SSN>&lt;xsl:value-of select=&quot;$post/item/tns:CustomerDetails/tns:SSN&quot;/>&lt;/tns:SSN>&lt;/xsl:if>&lt;/tns:CustomerDetails>&lt;/xsl:template>&lt;/xsl:stylesheet>"
                                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
+                                    inputVariable="CheckCreditScore-input"
                                     name="CheckCreditScore"
                                     outputVariable="CheckCreditScore"
                                     tibex:xpdlId="10777ff7-4d6b-40b4-87b1-ac1863be5836"
