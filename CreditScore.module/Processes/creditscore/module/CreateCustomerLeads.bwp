@@ -450,7 +450,6 @@
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/json/1535820382069"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/json/1535820412952"/>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST"/>
     <bpws:partnerLinks>
         <bpws:partnerLink name="customer-leads"
             partnerLinkType="ns2:partnerLinkType" partnerRole="use"
@@ -520,9 +519,7 @@
             </bpws:links>
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
-                    eventTimeout="0" name="Start"
-                    tibex:xpdlId="9ff29f63-95f3-4b31-b505-af3bd0c44162"
-                    variable="Start" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    eventTimeout="0" name="Start" variable="Start">
                     <bpws:sources>
                         <bpws:source linkName="StartTopost"/>
                     </bpws:sources>
@@ -535,8 +532,7 @@
                 <tibex:activityExtension
                     expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://tns.tibco.com/bw/json/1535820412952&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;post&quot;/>&lt;xsl:template name=&quot;End-input&quot; match=&quot;/&quot;>&lt;tns3:CusomerLeadsResponseElement>&lt;xsl:if test=&quot;$post/item/tns3:CusomerLeadsResponseElement/tns3:id&quot;>&lt;tns3:id>&lt;xsl:value-of select=&quot;$post/item/tns3:CusomerLeadsResponseElement/tns3:id&quot;/>&lt;/tns3:id>&lt;/xsl:if>&lt;xsl:if test=&quot;$post/item/tns3:CusomerLeadsResponseElement/tns3:message&quot;>&lt;tns3:message>&lt;xsl:value-of select=&quot;$post/item/tns3:CusomerLeadsResponseElement/tns3:message&quot;/>&lt;/tns3:message>&lt;/xsl:if>&lt;/tns3:CusomerLeadsResponseElement>&lt;/xsl:template>&lt;/xsl:stylesheet>"
                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
-                    inputVariable="End-input" name="End"
-                    tibex:xpdlId="75b590c3-ca78-4a56-b8a5-b26030243815" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    inputVariable="End-input" name="End">
                     <bpws:targets>
                         <bpws:target linkName="postToEnd"/>
                     </bpws:targets>
