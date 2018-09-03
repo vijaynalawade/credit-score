@@ -519,7 +519,9 @@
             </bpws:links>
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
-                    eventTimeout="0" name="Start" variable="Start">
+                    eventTimeout="0" name="Start"
+                    tibex:xpdlId="bdc51e0a-d87f-4b45-8769-20a913557e60"
+                    variable="Start" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:sources>
                         <bpws:source linkName="StartTopost"/>
                     </bpws:sources>
