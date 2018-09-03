@@ -8,6 +8,7 @@
     xmlns:ns0="http://xmlns.example.com/20180903003931PLT"
     xmlns:ns1="http://tns.tibco.com/bw/palette/internal/activityerror+9caba957-11d9-4122-8c6f-68e10340870a"
     xmlns:ns2="http://tns.tibco.com/bw/json/1535811725848"
+    xmlns:ns3="/T1535953916666Converted/JsonSchema"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
@@ -237,7 +238,8 @@
         extraErrorVars="true" modifiers="public"
         productVersion="2.4.0 V63 2018-08-08" scalable="true"
         singleton="true" stateless="true" type="IT"/>
-    <tibex:ProcessInterface context="" input="" output="{http://tns.tibco.com/bw/json/1535811725848}ExperianResponseElement"/>
+    <tibex:ProcessInterface context=""
+        input="{/T1535953916666Converted/JsonSchema}CustomerDetails" output="{http://tns.tibco.com/bw/json/1535811725848}ExperianResponseElement"/>
     <tibex:ProcessTemplateConfigurations/>
     <notation:Diagram measurementUnit="Pixel" type="BWProcess"
         xmlns:bwnotation="http://tns.tibco.com/bw/runtime/BWNotation"
@@ -438,6 +440,7 @@
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/json/1535811725848"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="/T1535953916666Converted/JsonSchema"/>
     <bpws:partnerLinks>
         <bpws:partnerLink name="creditscore"
             partnerLinkType="ns0:partnerLinkType" partnerRole="use"
@@ -485,6 +488,8 @@
         <bpws:variable element="ns:ErrorReport" name="_error" sca-bpel:internal="true"/>
         <bpws:variable element="ns2:ExperianResponseElement"
             name="End-input" sca-bpel:internal="true" tibex:parameter="out"/>
+        <bpws:variable element="ns3:CustomerDetails" name="Start"
+            sca-bpel:internal="true" tibex:parameter="in"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -503,7 +508,8 @@
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
                     eventTimeout="0" name="Start"
-                    tibex:xpdlId="a3065f4a-3f95-4312-aa2c-5df09c7e89b8" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="a3065f4a-3f95-4312-aa2c-5df09c7e89b8"
+                    variable="Start" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:sources>
                         <bpws:source linkName="StartToget"/>
                     </bpws:sources>
