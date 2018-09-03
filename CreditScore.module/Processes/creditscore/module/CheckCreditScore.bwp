@@ -9,6 +9,7 @@
     xmlns:ns1="http://tns.tibco.com/bw/json/1535811725848"
     xmlns:ns2="http://xmlns.example.com/20180901123213PLT"
     xmlns:ns3="http://tns.tibco.com/bw/palette/internal/activityerror+9b276d3d-18ed-4cba-86f6-040b0d4b096b"
+    xmlns:ns4="/T1535953916666Converted/JsonSchema"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
@@ -239,7 +240,7 @@
         productVersion="2.4.0 V63 2018-08-08" scalable="true"
         singleton="true" stateless="true" type="IT"/>
     <tibex:ProcessInterface context=""
-        input="{/T1535830131662Converted/JsonSchema}CustomerDetails" output="{http://tns.tibco.com/bw/json/1535811725848}ExperianResponseElement"/>
+        input="{/T1535953916666Converted/JsonSchema}CustomerDetails" output="{http://tns.tibco.com/bw/json/1535811725848}ExperianResponseElement"/>
     <tibex:ProcessTemplateConfigurations/>
     <notation:Diagram measurementUnit="Pixel" type="BWProcess"
         xmlns:bwnotation="http://tns.tibco.com/bw/runtime/BWNotation"
@@ -451,9 +452,8 @@
         <tibex:namespaceItem
             namespace="http://tns.tibco.com/bw/json/1535811725848" prefix="tns"/>
     </tibex:NamespaceRegistry>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="/T1535830131662Converted/JsonSchema"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/json/1535811725848"/>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="/T1535953916666Converted/JsonSchema"/>
     <bpws:partnerLinks>
         <bpws:partnerLink name="creditscore"
             partnerLinkType="ns2:partnerLinkType" partnerRole="use"
@@ -495,14 +495,14 @@
     <bpws:variables>
         <bpws:variable element="ns:ProcessContext"
             name="_processContext" sca-bpel:internal="true"/>
-        <bpws:variable element="ns0:CustomerDetails" name="Start"
-            sca-bpel:internal="true" tibex:parameter="in"/>
         <bpws:variable element="ns1:ExperianResponseElement"
             name="End-input" sca-bpel:internal="true" tibex:parameter="out"/>
         <bpws:variable messageType="ns2:getRequest" name="get-input" sca-bpel:internal="true"/>
         <bpws:variable messageType="ns2:getResponse" name="get" sca-bpel:internal="true"/>
         <bpws:variable element="ns3:ActivityErrorData" name="_error_get" sca-bpel:internal="true"/>
         <bpws:variable element="ns:ErrorReport" name="_error" sca-bpel:internal="true"/>
+        <bpws:variable element="ns4:CustomerDetails" name="Start"
+            sca-bpel:internal="true" tibex:parameter="in"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>

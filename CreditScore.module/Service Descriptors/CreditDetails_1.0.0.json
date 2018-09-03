@@ -3,7 +3,7 @@
   "info": {
     "version": "1.0.0",
     "title": "CreditDetails",
-    "x-lastModified": "Sep 01, 2018 12:22PM PST"
+    "x-lastModified": "Sep 02, 2018 22:27PM PST"
   },
   "paths": {
     "/creditdetails/v1": {
@@ -70,6 +70,10 @@
         "LastName": {
           "type": "string",
           "default": "Bar"
+        },
+        "Email": {
+          "type": "string",
+          "default": "fbar@demo.com"
         },
         "SSN": {
           "type": "string",
