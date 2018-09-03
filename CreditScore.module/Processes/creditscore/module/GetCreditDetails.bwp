@@ -406,8 +406,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.2"/>
 
                                     <layoutConstraint
-                                    x="326"
-                                    xsi:type="notation:Bounds" y="55"/>
+                                    x="189"
+                                    xsi:type="notation:Bounds" y="140"/>
                                     </children>
 
                                     <children type="4002 bw.generalactivities.callprocess">
@@ -518,7 +518,7 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="191"
+                                    x="336"
                                     xsi:type="notation:Bounds" y="55"/>
                                     </children>
 
@@ -543,7 +543,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="162"
+                                    height="225"
                                     width="472" xsi:type="notation:Bounds"/>
                                     </children>
 
@@ -563,10 +563,9 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity"/>
 
                                     <layoutConstraint
-                                    height="-45"
-                                    width="-76"
-                                    x="30"
-                                    xsi:type="notation:Bounds" y="20"/>
+                                    height="225"
+                                    width="475"
+                                    x="15" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -578,7 +577,9 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity"/>
 
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    <layoutConstraint
+                                    height="249"
+                                    width="515" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -635,8 +636,9 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0"/>
                                     <layoutConstraint
-                                    height="140"
-                                    width="485" xsi:type="notation:Bounds"/>
+                                    height="268"
+                                    width="577"
+                                    x="2" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -647,7 +649,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
                                     <layoutConstraint
-                                    height="235" width="595" xsi:type="notation:Bounds"/>
+                                    height="298" width="595" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -661,7 +663,7 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
-                                    <layoutConstraint height="384"
+                                    <layoutConstraint height="311"
                                     width="606" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
@@ -696,25 +698,25 @@
         <element href="//0"/>
         <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.0"/>
-            <bendpoints points="[25, -5, -122, 0]$[123, 0, -24, 5]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
             target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.0"/>
+            <bendpoints points="[25, 12, -156, -73]$[157, 73, -24, -12]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.1"/>
-            <bendpoints points="[25, 0, -110, 0]$[111, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints points="[-5, -24, 12, 61]$[-12, -60, 5, 25]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
@@ -770,8 +772,8 @@
                         <bpws:flow name="flow1">
                             <bpws:links>
                                 <bpws:link
-                                    name="CheckCreditScoreToCallProcess" tibex:linkType="SUCCESSWITHCONDITION"/>
-                                <bpws:link name="CallProcessTopostOut" tibex:linkType="SUCCESS"/>
+                                    name="CheckCreditScoreTopostOut" tibex:linkType="SUCCESS"/>
+                                <bpws:link name="postOutToCreateLeads" tibex:linkType="SUCCESSWITHCONDITION"/>
                             </bpws:links>
                             <bpws:empty name="OnMessageStart"
                                 tibex:constructor="onMessageStart" tibex:xpdlId="ef6f6e42-4376-4a13-8eac-9a470419c603"/>
@@ -788,8 +790,17 @@
                                 <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns2="http://xmlns.example.com/20180902225114PLT" xmlns:tns="http://tns.tibco.com/bw/json/1535811725848" xmlns:tns1="/T1535953916666Converted/JsonSchema" version="2.0"&gt;&lt;xsl:param name="CheckCreditScore"/&gt;&lt;xsl:template name="postOut-input" match="/"&gt;&lt;tns2:postResponse&gt;&lt;item&gt;&lt;tns1:CreditScoreDetails&gt;&lt;tns1:EquifaxResponse&gt;&lt;xsl:if test="$CheckCreditScore/tns:fiCOScore"&gt;&lt;tns1:FICOScore&gt;&lt;xsl:value-of select="$CheckCreditScore/tns:fiCOScore"/&gt;&lt;/tns1:FICOScore&gt;&lt;/xsl:if&gt;&lt;xsl:if test="$CheckCreditScore/tns:noOfInquiries"&gt;&lt;tns1:NoOfInquiries&gt;&lt;xsl:value-of select="$CheckCreditScore/tns:noOfInquiries"/&gt;&lt;/tns1:NoOfInquiries&gt;&lt;/xsl:if&gt;&lt;xsl:if test="$CheckCreditScore/tns:rating"&gt;&lt;tns1:Rating&gt;&lt;xsl:value-of select="$CheckCreditScore/tns:rating"/&gt;&lt;/tns1:Rating&gt;&lt;/xsl:if&gt;&lt;/tns1:EquifaxResponse&gt;&lt;tns1:ExperianResponse&gt;&lt;xsl:if test="$CheckCreditScore/tns:fiCOScore"&gt;&lt;tns1:FICOScore&gt;&lt;xsl:value-of select="$CheckCreditScore/tns:fiCOScore"/&gt;&lt;/tns1:FICOScore&gt;&lt;/xsl:if&gt;&lt;xsl:if test="$CheckCreditScore/tns:noOfInquiries"&gt;&lt;tns1:NoOfInquiries&gt;&lt;xsl:value-of select="$CheckCreditScore/tns:noOfInquiries"/&gt;&lt;/tns1:NoOfInquiries&gt;&lt;/xsl:if&gt;&lt;xsl:if test="$CheckCreditScore/tns:rating"&gt;&lt;tns1:Rating&gt;&lt;xsl:value-of select="$CheckCreditScore/tns:rating"/&gt;&lt;/tns1:Rating&gt;&lt;/xsl:if&gt;&lt;/tns1:ExperianResponse&gt;&lt;tns1:TransUnionResponse&gt;&lt;xsl:if test="$CheckCreditScore/tns:fiCOScore"&gt;&lt;tns1:FICOScore&gt;&lt;xsl:value-of select="$CheckCreditScore/tns:fiCOScore"/&gt;&lt;/tns1:FICOScore&gt;&lt;/xsl:if&gt;&lt;xsl:if test="$CheckCreditScore/tns:noOfInquiries"&gt;&lt;tns1:NoOfInquiries&gt;&lt;xsl:value-of select="$CheckCreditScore/tns:noOfInquiries"/&gt;&lt;/tns1:NoOfInquiries&gt;&lt;/xsl:if&gt;&lt;xsl:if test="$CheckCreditScore/tns:rating"&gt;&lt;tns1:Rating&gt;&lt;xsl:value-of select="$CheckCreditScore/tns:rating"/&gt;&lt;/tns1:Rating&gt;&lt;/xsl:if&gt;&lt;/tns1:TransUnionResponse&gt;&lt;/tns1:CreditScoreDetails&gt;&lt;/item&gt;&lt;/tns2:postResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                                 <bpws:targets>
-                                    <bpws:target linkName="CallProcessTopostOut"/>
+                                    <bpws:target linkName="CheckCreditScoreTopostOut"/>
                                 </bpws:targets>
+                                <bpws:sources>
+                                    <bpws:source linkName="postOutToCreateLeads">
+                                    <tibex:DesignExpression>
+                                    <tibex:expression
+                                    expression="$CheckCreditScore/ns2:fiCOScore >= 600" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                                    </tibex:DesignExpression>
+                                    <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[$CheckCreditScore/ns2:fiCOScore >= 600]]></bpws:transitionCondition>
+                                    </bpws:source>
+                                </bpws:sources>
                             </bpws:reply>
                             <bpws:extensionActivity>
                                 <tibex:extActivity
@@ -801,13 +812,7 @@
                                     tibex:xpdlId="10777ff7-4d6b-40b4-87b1-ac1863be5836"
                                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:sources>
-                                    <bpws:source linkName="CheckCreditScoreToCallProcess">
-                                    <tibex:DesignExpression>
-                                    <tibex:expression
-                                    expression="$CheckCreditScore/ns2:fiCOScore >= 600" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
-                                    </tibex:DesignExpression>
-                                    <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[$CheckCreditScore/ns2:fiCOScore >= 600]]></bpws:transitionCondition>
-                                    </bpws:source>
+                                    <bpws:source linkName="CheckCreditScoreTopostOut"/>
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
@@ -827,11 +832,8 @@
                                     tibex:xpdlId="a4ae24cd-8af3-4aa1-a345-f0df0839739a"
                                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="CheckCreditScoreToCallProcess"/>
+                                    <bpws:target linkName="postOutToCreateLeads"/>
                                     </bpws:targets>
-                                    <bpws:sources>
-                                    <bpws:source linkName="CallProcessTopostOut"/>
-                                    </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
                                     expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://tns.tibco.com/bw/json/1535811725848&quot; xmlns:tns1=&quot;http://tns.tibco.com/bw/json/1535820382069&quot; xmlns:tns=&quot;/T1535953916666Converted/JsonSchema&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;post.item&quot;/>&#xa;    &lt;xsl:param name=&quot;CheckCreditScore&quot;/>&#xa;    &lt;xsl:template name=&quot;CreateLeads-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns1:CustomerLeadsRequestElement>&#xa;            &lt;tns1:customer>&#xa;                &lt;xsl:if test=&quot;$CheckCreditScore/tns3:fiCOScore&quot;>&#xa;                    &lt;tns1:creditscore>&#xa;                        &lt;xsl:value-of select=&quot;$CheckCreditScore/tns3:fiCOScore&quot;/>&#xa;                    &lt;/tns1:creditscore>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$post.item/tns:Email&quot;>&#xa;                    &lt;tns1:email>&#xa;                        &lt;xsl:value-of select=&quot;$post.item/tns:Email&quot;/>&#xa;                    &lt;/tns1:email>&#xa;                &lt;/xsl:if>&#xa;                &lt;tns1:name>&#xa;                    &lt;xsl:value-of select=&quot;concat($post.item/tns:FirstName, &amp;quot; &amp;quot;,$post.item/tns:LastName)&quot;/>&#xa;                &lt;/tns1:name>&#xa;            &lt;/tns1:customer>&#xa;        &lt;/tns1:CustomerLeadsRequestElement>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
