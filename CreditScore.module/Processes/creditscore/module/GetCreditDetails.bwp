@@ -406,8 +406,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.2"/>
 
                                     <layoutConstraint
-                                    x="189"
-                                    xsi:type="notation:Bounds" y="140"/>
+                                    x="180"
+                                    xsi:type="notation:Bounds" y="138"/>
                                     </children>
 
                                     <children type="4002 bw.generalactivities.callprocess">
