@@ -457,7 +457,7 @@
                             <sca:interface.wsdl
                                 interface="http://xmlns.example.com/20180903003931PLT#wsdl.interface(creditscore)" scaext:wsdlLocation=""/>
                             <scaext:binding basePath="/"
-                                connector="creditscore.module.HttpClientResource"
+                                connector="creditscore.module.CreditCheckServiceClient"
                                 docBasePath="http://localhost:7777/"
                                 docResourcePath="Creditscore"
                                 name="RestReference" path="/creditscore"
