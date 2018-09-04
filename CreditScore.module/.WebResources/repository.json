@@ -19,6 +19,15 @@
                 "localHash": "787642ab5c83a1e1aaed6f6a4cd41f9e90de90b0",
                 "remoteId": "70",
                 "remoteHash": "787642ab5c83a1e1aaed6f6a4cd41f9e90de90b0"
+            },
+            {
+                "localTimestamp": 1536029043000,
+                "localURI": "/CreditScore.module/Service Descriptors/CustomerLeads_1.0.0.json",
+                "disabled": false,
+                "remoteTimestamp": 1535815084000,
+                "localHash": "e6c435c5262c220b256338248cc0d16909b36fa4",
+                "remoteId": "67",
+                "remoteHash": "e6c435c5262c220b256338248cc0d16909b36fa4"
             }
         ],
         "url": "https://integration.cloud.tibco.com:443"

@@ -3,7 +3,7 @@
 	<globalVariables>
 		<globalVariable>
 			<name>CAMPAIGN_ENROLLMENT_MIN_SCORE</name>
-			<value>600</value>
+			<value>#CAMPAIGN_MINIMUM_SCORE#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
