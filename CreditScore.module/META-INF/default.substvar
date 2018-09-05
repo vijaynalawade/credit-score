@@ -59,7 +59,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>CAMPAIGN_ENROLLMENT_MIN_SCORE</name>
-			<value>600</value>
+			<value>901</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>

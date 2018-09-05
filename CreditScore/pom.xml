@@ -12,11 +12,11 @@
   <packaging>bwear</packaging>
   <properties>
     <skipTests>false</skipTests>
-    <bw.Home>/bw/6.5</bw.Home>
+    <bw.Home>${BW_HOME}</bw.Home>
     <project.type>Docker</project.type>
     <failIfNoTests>false</failIfNoTests>
     <docker.property.file>docker-dev.properties</docker.property.file>
-    <tibco.Home>/Users/vnalawad/Tibco-Dev/Installations/bw</tibco.Home>
+    <tibco.Home>${TIBCO_HOME}</tibco.Home>
   </properties>
   <build>
     <plugins>
