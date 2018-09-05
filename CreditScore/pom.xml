@@ -12,13 +12,27 @@
   <packaging>bwear</packaging>
   <properties>
     <skipTests>false</skipTests>
-    <bw.Home>${bw_home}</bw.Home>
     <project.type>Docker</project.type>
     <k8s.property.file>k8s-dev.properties</k8s.property.file>
     <failIfNoTests>false</failIfNoTests>
     <docker.property.file>docker-dev.properties</docker.property.file>
-    <tibco.Home>${tibco_home}</tibco.Home>
   </properties>
+  <profiles>
+    <profile>
+        <id>local</id>
+        <properties>
+            <bw.Home>${bw_home}</bw.Home>
+            <tibco.Home>${tibco_home}</tibco.Home>
+        </properties>
+    </profile>
+    <profile>
+        <id>jenkins</id>
+        <properties>
+            <bw.Home>/bwce/2.4</bw.Home>
+            <tibco.Home>/home/tibco/bwce</tibco.Home>
+        </properties>
+    </profile>
+  </profiles>
   <build>
     <plugins>
       <plugin>
