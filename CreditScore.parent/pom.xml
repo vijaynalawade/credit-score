@@ -24,6 +24,14 @@
           <skip>true</skip>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>io.fabric8</groupId>
+        <artifactId>fabric8-maven-plugin</artifactId>
+        <version>3.5.41</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>

@@ -12,18 +12,19 @@
   <packaging>bwear</packaging>
   <properties>
     <skipTests>false</skipTests>
-    <bw.Home>${BW_HOME}</bw.Home>
+    <bw.Home>${bw_home}</bw.Home>
     <project.type>Docker</project.type>
+    <k8s.property.file>k8s-dev.properties</k8s.property.file>
     <failIfNoTests>false</failIfNoTests>
     <docker.property.file>docker-dev.properties</docker.property.file>
-    <tibco.Home>${TIBCO_HOME}</tibco.Home>
+    <tibco.Home>${tibco_home}</tibco.Home>
   </properties>
   <build>
     <plugins>
       <plugin>
         <groupId>com.tibco.plugins</groupId>
         <artifactId>bw6-maven-plugin</artifactId>
-        <version>2.0.1</version>
+        <version>2.0.0</version>
         <extensions>true</extensions>
       </plugin>
       <plugin>
@@ -41,6 +42,7 @@
         <configuration>
           <files>
             <file>${docker.property.file}</file>
+            <file>${k8s.property.file}</file>
           </files>
         </configuration>
       </plugin>
@@ -77,6 +79,14 @@
           </images>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>io.fabric8</groupId>
+        <artifactId>fabric8-maven-plugin</artifactId>
+        <version>3.5.41</version>
+        <configuration>
+          <skip>false</skip>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
   <reporting>
@@ -84,7 +94,7 @@
       <plugin>
         <groupId>com.tibco.plugins</groupId>
         <artifactId>bw6-maven-plugin</artifactId>
-        <version>2.0.1</version>
+        <version>2.0.0</version>
       </plugin>
     </plugins>
   </reporting>
