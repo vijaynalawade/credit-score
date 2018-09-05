@@ -19,7 +19,6 @@
   <sca:property xmi:id="_wCUv4K4cEeiOqJvqAooM9g" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_wCdSwK4cEeiOqJvqAooM9g" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
   <sca:property xmi:id="_wCkngK4cEeiOqJvqAooM9g" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
-  <sca:property xmi:id="_CTwdILAQEeiXGbqCN-pHxQ" name="CAMPAIGN_ENROLLMENT_MIN_SCORE" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_XoF7UK89EeiI355DVunAcw" name="ComponentGetCreditDetails" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_XoF7Ua89EeiI355DVunAcw" processName="creditscore.module.CreditCheck"/>
     <sca:service xmi:id="_RzrQMK8-EeiVLZN4e871_A" name="creditdetails-v1">
