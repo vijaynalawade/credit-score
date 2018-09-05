@@ -1,22 +1,5 @@
-{"records": [
-    {
-        "jsonSchemaLocation": "/CreditScore.module/Service Descriptors/CreditDetails_1.0.0.json",
-        "conversionType": "generated",
-        "xsdSchemaTargetNamespace": "/T1535953916666Converted/JsonSchema"
-    },
-    {
-        "jsonSchemaLocation": "/CreditScore.module/Service Descriptors/CustomerLeads_1.0.0.json",
-        "conversionType": "generated",
-        "xsdSchemaTargetNamespace": "/T1536029195597Converted/JsonSchema"
-    },
-    {
-        "jsonSchemaLocation": "/CreditScore.module/Service Descriptors/CustomerLeads_1.0.0.json",
-        "conversionType": "generated",
-        "xsdSchemaTargetNamespace": "/T1536041748443Converted/JsonSchema"
-    },
-    {
-        "jsonSchemaLocation": "/CreditScore.module/Service Descriptors/CustomerLeads_1.0.0.json",
-        "conversionType": "generated",
-        "xsdSchemaTargetNamespace": "/T1536042092077Converted/JsonSchema"
-    }
-]}
+{"records": [{
+    "jsonSchemaLocation": "/CreditScore.module/Service Descriptors/CreditDetails_1.0.0.json",
+    "conversionType": "generated",
+    "xsdSchemaTargetNamespace": "/T1535953916666Converted/JsonSchema"
+}]}
